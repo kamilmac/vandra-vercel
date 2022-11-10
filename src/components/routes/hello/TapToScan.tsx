@@ -1,7 +1,7 @@
 import { css } from 'emotion';
 import * as React from 'react';
-import { useProductsStore } from '@stores/productsStore';
-import { useScanStore } from '@stores/scanStore';
+import { useProductsStore } from '/src/stores/productsStore';
+import { useScanStore } from '/src/stores/scanStore';
 
 const styles = {
   roundButton: css`

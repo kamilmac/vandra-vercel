@@ -1,6 +1,6 @@
 import create from 'zustand';
 
-import { config } from '@services/config';
+import { config } from '/src/services/config';
 
 import { createNav, getStateFromUrl } from './view/view';
 

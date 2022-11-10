@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Layout } from '@components/layout';
-import { useProductsStore } from '@stores/productsStore';
-import { useScanStore } from '@stores/scanStore';
-import { useViewStore } from '@stores/viewStore';
+import { Layout } from '/src/components/layout';
+import { useProductsStore } from '/src/stores/productsStore';
+import { useScanStore } from '/src/stores/scanStore';
+import { useViewStore } from '/src/stores/viewStore';
 
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
   window.store = {
@@ -17,7 +17,6 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
 createRoot(document.getElementById('app'))
   .render(
     <React.StrictMode>
-      { /* <RouterProvider router={router} /> */ }
       <Layout />
     </React.StrictMode>,
   );

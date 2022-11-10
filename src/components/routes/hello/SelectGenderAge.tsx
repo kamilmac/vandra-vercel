@@ -1,6 +1,6 @@
 import { css } from 'emotion';
 import * as React from 'react';
-import { useProductsStore } from '@stores/productsStore';
+import { useProductsStore } from '/src/stores/productsStore';
 
 const styles = {
   container: css`

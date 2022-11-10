@@ -1,4 +1,4 @@
-import { config } from '@services/config';
+import { config } from '/src/services/config';
 
 const SCAN_ROUTE_PREFIX = 'scan_';
 
