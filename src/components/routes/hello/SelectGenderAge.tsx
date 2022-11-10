@@ -62,7 +62,7 @@ interface SelectGenderAgeProps {
 const SelectGenderAge: React.FC<SelectGenderAgeProps> = ({ nextStep }) => {
   const buttons: ButtonDescription[] = [
     {
-      title:  "Women'ss",
+      title:  "Women-zz",
       action: 'women',
     },
     {
