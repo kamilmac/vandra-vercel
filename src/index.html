@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="manifest" href="/build/manifest.json" />
+  <title>Vandra v2</title>
+
+  <script>
+    {% block view_variables %}{% endblock %}
+  </script>
+
+</head>
+<body>
+  <div id="app"></div>
+  <% for (index in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[index] %>" type="text/javascript"></script>
+  <% } %>
+</body>
+</html>
